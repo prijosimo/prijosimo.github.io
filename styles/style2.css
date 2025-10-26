@@ -1,0 +1,127 @@
+body {
+  background-color: #F5F2EF;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+h2 {
+  color: #70412F;
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 0.7em;
+}
+
+.leftPanel {
+  width: 30%;
+  background-color: #97A28B;
+  font-size:1.3em;
+  padding: 1.5em;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+
+  border: 5px solid #C4CBBE;
+  border-radius: 1%;
+}
+
+.education li {
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+.actionButton {
+  display: inline-block;
+  margin-top: 2em;
+  margin-left: 2.2em;
+  padding: 0.8em;
+  background-color: #DACCC1;
+  border: 3px solid #C2AB99;
+  color: #70412F;
+  font-size: 1.2em;
+  border-radius: 6px;
+}
+
+.actionButton:hover {
+  background-color: #C4CBBE;
+}
+
+.experiences {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background-color: #F5F2EF;
+  margin-bottom: 3em;
+}
+
+.experiences h2 {
+  margin-right: 3em;
+}
+
+.experiences p {
+  font-size: 1.3em;
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+  margin-right: 3em;
+  text-align: justify;
+}
+
+.experiences li {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  margin-right: 3em;
+  margin-bottom: 1em;
+}
+
+.jobSubline {
+  display: inline-block;
+  margin-left: 1.2em;
+}
+
+.job {
+  background-color: #DBDFD7;
+  color: #3B4134;
+  cursor: pointer;
+  padding: 1.5em;
+  width: 90%;
+  text-align: left;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-right: 2em;
+  border-radius: 4px;
+}
+
+.job:hover {
+  background-color: #E7E6E2;
+}
+
+@media (max-width: 600px) {
+.container {
+  flex-direction: column;
+}
+
+.leftPanel,
+.experiences {
+  width: 100%;
+  margin: 1em;
+}
+  
+.job {
+  width: 95%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.jobSubline {
+  margin-left: 1em;
+}
+
+body {
+  font-size: 90%;
+}
+}
