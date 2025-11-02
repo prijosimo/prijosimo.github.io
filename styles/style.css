@@ -2,7 +2,9 @@ body {
   background-color: #F5F2EF;
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+  font-size: 18px;
 }
+
 
 .container {
   display: flex;
@@ -10,33 +12,15 @@ body {
   height: 100%;
 }
 
-.leftPanel {
-  width: 30%;
+.leftColumn {
   background-color: #97A28B;
-  padding: 2em 1.5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
   border: 5px solid #C4CBBE;
-}
-
-.rightPanel {
-  width: 70%;
-  padding-top: 0.5em;
-  padding-right: 3.5em;
-  padding-bottom: 1em;
-  padding-left: 3.5em; 
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  text-align: justify;
-  line-height: 1.6;
+  text-align: center;
+  padding: 1.5rem; /* Equivalent to Bootstrap's p-4 */
 }
 
 .profile {
-  width: 75%;
+  width: 65%;
   border-radius: 20%;
   margin-bottom: 2em;
   border: 5px solid #3B4134;
@@ -53,7 +37,7 @@ h1 {
 
 h2 {
   color: #70412F;
-  font-size: 1.5em;
+  font-size: 1.6em;
   margin-bottom: 0.6em;
   text-align: center;
   width: 100%;
@@ -71,16 +55,17 @@ h2 {
 .summary{
   font-size: 1.2em;
   margin-bottom: 0.5em;
+  text-align: justify;
 }
 
 .aboutMe{
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 .contactText {
   width: 100%;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.1em;
   color: black;
   line-height: 0.8;
   margin-bottom: 1.5em;
@@ -97,7 +82,7 @@ hr {
 .myUL {
   padding-left: 1.2em;
   text-align: left;
-  font-size: 1em;
+  font-size: 1.1em;
   color: black;
   line-height: 1.6;
   margin: 0;
@@ -117,9 +102,14 @@ hr {
   background-color: #DACCC1;
   border: 3px solid #C2AB99;
   color: #70412F;
-  font-size: 1em;
+  font-size: 1.5em;
   border-radius: 6px;
   transition: background-color 0.3s ease;
+}
+
+.centerButton {
+  display: flex;
+  justify-content: center;
 }
 
 .actionButton:hover {
@@ -131,12 +121,12 @@ hr {
     font-size: 90%;
   }
 
-  .container {
-    flex-direction: column;
+  .leftColumn {
+    width: 100%;
+    text-align: left;
   }
 
-  .leftPanel {
-    width: 100%;
-    align-items: flex-start;
+  .rightColumn {
+    padding: 1rem;
   }
 }
